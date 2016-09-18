@@ -55,6 +55,7 @@ nav {
     font-size: $navbar-brand-font-size;
     padding: 0;
     white-space: nowrap;
+    z-index: 9999;
 
     &.center {
       left: 50%;
