@@ -1,10 +1,19 @@
+/**
+ * Navbar overwrites
+ */
+$navbar-bg-color: #fff;
+$navbar-font-color:  #ffbe02;
+$navbar-height: 100px;
+$navbar-height-mobile: $navbar-height;
+
 nav {
   color: $navbar-font-color;
   @extend .z-depth-1;
-  background-color: $primary-color;
+  background-color: $navbar-bg-color;
   width: 100%;
   height: $navbar-height-mobile;
   line-height: $navbar-height-mobile;
+  font-weight: bold;
 
   a { color: $navbar-font-color; }
 

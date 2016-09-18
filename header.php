@@ -24,44 +24,24 @@
 	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'material-design-dentistry' ); ?></a>
 
 	<header id="masthead" class="site-header" role="banner">
-		<div class="site-branding">
-			<?php
-			if ( is_front_page() && is_home() ) : ?>
-				<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
-			<?php else : ?>
-				<p class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></p>
-			<?php
-			endif;
-
-			$description = get_bloginfo( 'description', 'display' );
-			if ( $description || is_customize_preview() ) : ?>
-				<p class="site-description"><?php echo $description; /* WPCS: xss ok. */ ?></p>
-			<?php
-			endif; ?>
-		</div><!-- .site-branding -->
-
-
-		<div class="m-container nav">
+		<nav>
 			<div class="container">
-				<nav id="site-navigation" class="main-navigation" role="navigation">
-					<a href="#" data-activates="mobile-nav" class="button-collapse"><i class="mdi-navigation-menu"></i></a>
-					<?php wp_nav_menu(
-						array(
-							'theme_location' => 'primary',
-							'menu_class' => 'menu side-nav',
-							'menu_id' => 'mobile-nav',
-							'items_wrap' => '<ul id="%1$s" class="%2$s"><li class="mobile-header"><p>Menu</p></li>%3$s</ul><div class="clear"></div>',
-						)
-					); ?>
-					<?php wp_nav_menu(
-						array(
-							'theme_location' => 'primary',
-							'menu_class' => 'hide-on-med-and-down'
-						)
-					); ?>
-				</nav><!-- #site-navigation -->
-			<div class="clear"></div>
-		</div>
+				<div class="nav-wrapper">
+					<a href="#" class="brand-logo center"><img src="<?php echo get_template_directory_uri() . '/images/logo.png'; ?>" alt="Site logo"></a>
+					<ul id="nav-mobile" class="left hide-on-med-and-down">
+						<li><a href="sass.html">OUR DOCTORS</a></li>
+						<li><a href="badges.html">OUR CLINIC</a></li>
+						<li><a href="collapsible.html">TREATMENTS</a></li>
+					</ul>
+					<ul id="nav-mobile" class="right hide-on-med-and-down">
+						<li><a href="sass.html">ARTICLES</a></li>
+						<li><a href="badges.html">VIDEOS</a></li>
+						<li><a href="collapsible.html">Q&amp;A</a></li>
+						<li><a href="collapsible.html">CONTACT US</a></li>
+					</ul>
+				</div>
+			</div>
+		</nav>
 	</header><!-- #masthead -->
 
 	<div id="content" class="site-content">
