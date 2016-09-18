@@ -102,8 +102,6 @@ add_action( 'widgets_init', 'material_design_dentistry_widgets_init' );
  * Enqueue scripts and styles.
  */
 function material_design_dentistry_scripts() {
-	wp_enqueue_style( 'material-design-dentistry-style', get_stylesheet_uri() );
-
 	wp_enqueue_script( 'material-design-dentistry-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20151215', true );
 
 	wp_enqueue_script( 'material-design-dentistry-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20151215', true );
@@ -120,6 +118,7 @@ function material_design_dentistry_scripts() {
 	wp_enqueue_style( 'material-style', get_template_directory_uri() . '/css/materialize.css' );
 	wp_enqueue_script( 'material-script', get_template_directory_uri() . '/js/bin/materialize.js', array(), '1.0', false );
 	wp_enqueue_script( 'material-custom', get_template_directory_uri() . '/js/theme/navigation.js', array(), '1.0', false );
+	wp_enqueue_style( 'material-design-dentistry-style', get_stylesheet_uri() );
 
 }
 add_action( 'wp_enqueue_scripts', 'material_design_dentistry_scripts' );
