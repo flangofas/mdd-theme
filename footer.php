@@ -10,10 +10,6 @@
  */
 
 ?>
-		<div class="clear"></div>
-		</div><!-- .container -->
-	</div><!-- #content -->
-
 	<footer id="colophon" class="site-footer" role="contentinfo">
 		<div class="site-info">
 			<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'material-design-dentistry' ) ); ?>"><?php printf( esc_html__( 'Proudly powered by %s', 'material-design-dentistry' ), 'WordPress' ); ?></a>
