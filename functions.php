@@ -116,6 +116,7 @@ function material_design_dentistry_scripts() {
 		wp_enqueue_script( 'material-jquery', 'http://code.jquery.com/jquery-2.1.3.min.js', array(), '1.0', false );
 	}
 	wp_enqueue_style( 'material-style', get_template_directory_uri() . '/css/materialize.css' );
+	wp_enqueue_style( 'material-icons', 'http://fonts.googleapis.com/icon?family=Material+Icons' );
 	wp_enqueue_script( 'material-script', get_template_directory_uri() . '/js/bin/materialize.js', array(), '1.0', false );
 	wp_enqueue_script( 'material-custom', get_template_directory_uri() . '/js/theme/navigation.js', array(), '1.0', false );
 	wp_enqueue_style( 'material-design-dentistry-style', get_stylesheet_uri() );

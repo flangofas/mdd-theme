@@ -24,12 +24,19 @@
 	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'material-design-dentistry' ); ?></a>
 
 	<header id="masthead" class="site-header" role="banner">
+		<!-- Dropdown Structure -->
+		<ul id="dropdown1" class="dropdown-content">
+			<li><a href="#!">one</a></li>
+			<li><a href="#!">two</a></li>
+			<li class="divider"></li>
+			<li><a href="#!">three</a></li>
+		</ul>
 		<nav>
 			<div class="container">
 				<div class="nav-wrapper">
 					<a href="#" class="brand-logo center"><img src="<?php echo get_template_directory_uri() . '/images/logo.png'; ?>" alt="Site logo"></a>
 					<ul id="nav-mobile" class="left hide-on-med-and-down">
-						<li><a href="sass.html">OUR DOCTORS</a></li>
+						<li><a class="dropdown-button" href="#!" data-activates="dropdown1">OUR DOCTORS<i class="material-icons right">arrow_drop_down</i></a></li>
 						<li><a href="badges.html">OUR CLINIC</a></li>
 						<li><a href="collapsible.html">TREATMENTS</a></li>
 					</ul>
