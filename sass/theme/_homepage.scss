@@ -1,6 +1,28 @@
 .section {
   font-weight: bold;
+  &.medium {
+    height: 400px;
+  }
+  > .row {
+    margin-bottom: 0;
+  }
+  .section-valign {
+    height: 400px;
+    padding: 2rem;
+  }
 }
 .section.section-first {
   background-color: color("grey", "lighten-2");
+}
+.section.split {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.sm {
+  background-size: cover;
+  min-height: 200px;
+  max-height: 350px;
+  background-size: cover;
+  color: $mmd-black;
 }

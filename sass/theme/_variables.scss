@@ -33,7 +33,7 @@
 /* 1. Colors
    ========================================================================== */
 
-$primary-color: #ffbe02 !default;
+$primary-color: color("orange", "accent-2") !default;
 $primary-color-light: lighten($primary-color, 15%) !default;
 $primary-color-dark: darken($primary-color, 15%) !default;
 
@@ -42,6 +42,7 @@ $success-color: color("green", "base") !default;
 $error-color: color("red", "base") !default;
 $link-color: color("light-blue", "darken-1") !default;
 
+$mmd-black: color('grey', 'darken-4');
 
 /* 2. Badges
    ========================================================================== */
@@ -89,10 +90,11 @@ $button-floating-radius: 50% !default;
 /* 4. Cards
    ========================================================================== */
 
-$card-padding: 20px !default;
+$card-padding: 10px !default;
+$card-margin: 20px !default;
 $card-bg-color: #fff !default;
-$card-link-color: color("orange", "accent-2") !default;
-$card-link-color-light: lighten($card-link-color, 20%) !default;
+$card-link-color: $primary-color !default;
+$card-link-color-light: $primary-color-light !default;
 
 
 /* 5. Collapsible

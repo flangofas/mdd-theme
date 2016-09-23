@@ -4,13 +4,14 @@ body {
 }
 
 .rm {
-  color: $primary-color-dark;
+  color: $primary-color;
+  &:hover { color: $primary-color-light; }
 }
 
 .heading {
   position: relative;
   display: inline-block;
-  color: color('grey', 'darken-4');
+  color: $mmd-black;
   font-weight: bold;
 
   &:before {
@@ -36,5 +37,12 @@ body {
     display: inline-block;
     padding-right: 5px;
     padding-left: 5px;
+  }
+}
+
+.row.no-gutter {
+  > .col {
+    padding-left: 0;
+    padding-right: 0;
   }
 }
