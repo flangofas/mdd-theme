@@ -26,7 +26,6 @@
 				'after'  => '</div>',
 			) );
 		?>
-		<?php get_template_part( 'template-parts/carousel' ); ?>
 		</div><!-- .container -->
 	</div><!-- .entry-content -->
 
