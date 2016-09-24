@@ -58,3 +58,17 @@ strong { font-weight: 700; }
     width: 300px;
   }
 }
+
+.main-title {
+  background-image: url('img/entry-header.jpg');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  & h1, h2 {
+    text-align: center;
+    margin: 0;
+    padding: ($h1-fontsize * 3) 0 ($h1-fontsize * 1.5) 0;
+    color: #fff;
+    font-weight: bold;
+  }
+}
