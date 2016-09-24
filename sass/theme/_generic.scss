@@ -77,3 +77,9 @@ strong { font-weight: 700; }
     font-weight: bold;
   }
 }
+
+.gallery {
+  & img {
+    padding: 1rem;
+  }
+}
