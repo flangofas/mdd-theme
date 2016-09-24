@@ -43,7 +43,7 @@
 		<nav>
 			<div class="container">
 				<div class="nav-wrapper">
-					<a href="#" class="brand-logo center"><img src="<?php echo get_template_directory_uri() . '/img/logo.png'; ?>" alt="Site logo"></a>
+					<a href="/" class="brand-logo center"><img src="<?php echo get_template_directory_uri() . '/img/logo.png'; ?>" alt="Site logo"></a>
 					<ul id="nav-mobile" class="left hide-on-med-and-down">
 						<li><a class="dropdown-button" href="#!" data-activates="dropdown1">OUR DOCTORS<i class="material-icons right">arrow_drop_down</i></a></li>
 						<li><a href="badges.html">OUR CLINIC</a></li>

@@ -1,3 +1,6 @@
+/**
+ * Homepage
+ */
 .section {
   font-weight: bold;
   &.medium {
@@ -12,7 +15,7 @@
   }
 }
 .section.section-first {
-  background-color: color("grey", "lighten-2");
+  background-color: $mmd-grey;
 }
 .section.split {
   padding-top: 0;
@@ -26,3 +29,6 @@
   background-size: cover;
   color: $mmd-black;
 }
+/**
+ * Homepage end
+ */
