@@ -3,20 +3,22 @@
  * Template Name: Horizontal Card
  * The template for displaying a horizontal card.
  *
- * @package ABX child theme
+ * @package Material_Design_Dentistry
  *
  */
 get_header();
 ?>
-    <div id="primary" class="content-area">
+    <div id="primary">
         <main id="main" class="site-main" role="main">
             <?php
             while ( have_posts() ) : the_post();
 
                 get_template_part( 'template-parts/main', 'title' );
-
-                get_template_part( 'template-parts/horizontal', 'card' );
-
+            ?>
+                <div class="content-area">
+                <?php get_template_part( 'template-parts/horizontal', 'card' ); ?>
+                </div>
+            <?php
                 // If comments are open or we have at least one comment, load up the comment template.
                 if ( comments_open() || get_comments_number() ) :
                     comments_template();

@@ -59,7 +59,12 @@ strong { font-weight: 700; }
   }
 }
 
-.main-title {
+.content-area {
+  padding: 3.5rem 0;
+}
+
+.main-title,
+.entry-header {
   background-image: url('img/entry-header.jpg');
   background-repeat: no-repeat;
   background-position: center center;

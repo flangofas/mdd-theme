@@ -1,4 +1,4 @@
-<div class="container mmd-card-horizontal-wrapper">
+<div class="container">
 	<div class="row">
 		<div class="col s12">
 			<div class="card horizontal">
