@@ -3,6 +3,8 @@ body {
   color: color('grey', 'darken-1');
 }
 
+strong { font-weight: 700; }
+
 .rm {
   color: $primary-color;
   &:hover { color: $primary-color-light; }
@@ -44,5 +46,15 @@ body {
   > .col {
     padding-left: 0;
     padding-right: 0;
+  }
+}
+
+.site-main {
+  background-color: $mmd-grey;
+}
+
+.carousel.mmd-carousel {
+  & .carousel-item {
+    width: 300px;
   }
 }
