@@ -3,6 +3,10 @@ body {
   color: color('grey', 'darken-1');
 }
 
+body.page {
+  background-color: $mmd-grey;
+}
+
 strong { font-weight: 700; }
 
 .rm {
@@ -49,10 +53,6 @@ strong { font-weight: 700; }
   }
 }
 
-.site-main {
-  background-color: $mmd-grey;
-}
-
 .carousel.mmd-carousel {
   & .carousel-item {
     width: 300px;
@@ -60,7 +60,9 @@ strong { font-weight: 700; }
 }
 
 .content-area {
-  padding: 3.5rem 0;
+  margin: 3.5rem 0;
+  padding: 2rem 0;
+  background-color: #fff;
 }
 
 .main-title,
