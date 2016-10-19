@@ -11,20 +11,33 @@ get_header(); ?>
 <div id="primary">
 	<main id="main" class="site-main" role="main">
 		<?php get_template_part( 'template-parts/slider' ); ?>
-		<div class="section section-first">
-			<div class="container">
-				<div class="row">
-					<div class="col s12">
-						<div class="section-content">
-							<div class="center-align">
-								<h2 class="heading">ABOUT US</h2>
+		<?php
+		$args = [
+			'pagename' => 'about-us',
+			'post_type' => 'page',
+		];
+		$query = new WP_Query( $args );
+		while ( $query->have_posts() ) :
+			$query->the_post();
+			if ( get_post_meta( get_the_ID(), 'featured', true ) ) : ?>
+				<div class="section section-first">
+					<div class="container">
+						<div class="row">
+							<div class="col s12">
+								<div class="section-content">
+									<div class="center-align">
+										<h2 class="heading"><?php the_title() ?></h2>
+									</div>
+									<?php the_excerpt(); ?>
+								</div>
 							</div>
-							<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. <a href="#" class="rm">Read more</a></p>
 						</div>
 					</div>
 				</div>
-			</div>
-		</div>
+		<?php
+			endif;
+		endwhile;
+		?>
 		<div class="section split medium">
 			<div class="row no-gutter">
 				<div class="col l6 s12">

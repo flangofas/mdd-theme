@@ -7,6 +7,32 @@
  * @package Material_Design_Dentistry
  */
 
+
+if ( ! function_exists( 'material_design_excerpt_more' ) ) :
+	/**
+	 * Append read more to page excerpt.
+	 *
+	 * @param  [type] $excerpt [description]
+	 * @return [type]          [description]
+	 */
+	function material_design_excerpt_more($excerpt) {
+		global $post;
+		return $post->post_excerpt . '...<a href="'. get_permalink($post->ID) . '">Read more</a>';
+	}
+endif;
+add_filter('the_excerpt', 'material_design_excerpt_more');
+
+if ( ! function_exists( 'material_design_add_excerpt_to_pages' ) ) :
+	/**
+	 * Add excerpt to pages, same as posts.
+	 * @return void
+	 */
+	function material_design_add_excerpt_to_pages() {
+		add_post_type_support( 'page', 'excerpt' );
+	}
+endif;
+add_action( 'init', 'material_design_add_excerpt_to_pages' );
+
 if ( ! function_exists( 'material_design_dentistry_setup' ) ) :
 /**
  * Sets up theme defaults and registers support for various WordPress features.
