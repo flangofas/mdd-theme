@@ -18,72 +18,62 @@ get_header(); ?>
 		];
 		$query = new WP_Query( $args );
 		while ( $query->have_posts() ) :
-			$query->the_post();
-			if ( get_post_meta( get_the_ID(), 'featured', true ) ) : ?>
-				<div class="section section-first">
-					<div class="container">
-						<div class="row">
-							<div class="col s12">
-								<div class="section-content">
-									<div class="center-align">
-										<h2 class="heading"><?php the_title() ?></h2>
-									</div>
-									<?php the_excerpt(); ?>
+			$query->the_post(); ?>
+			<div class="section section-first">
+				<div class="container">
+					<div class="row">
+						<div class="col s12">
+							<div class="section-content">
+								<div class="center-align">
+									<h2 class="heading"><?php the_title() ?></h2>
 								</div>
+								<?php the_excerpt(); ?>
 							</div>
 						</div>
 					</div>
 				</div>
+			</div>
 		<?php
-			endif;
 		endwhile;
 		?>
 		<div class="section split medium">
 			<div class="row no-gutter">
-				<div class="col l6 s12">
-					<div class="card hoverable medium">
-						<div class="card-image">
-							<img src="<?php echo get_template_directory_uri() . '/img/our-clinic.jpg'; ?>">
-							<h2 class="card-title heading">ABOUT OUR CLINIC</h2>
+				<?php
+				$sections = material_design_get_sections();
+				$total = count($sections);
+				$odd = (bool)($total % 2);
+				$i = 0;
+				foreach ($sections as $section) :
+					$last = ($total - 1) == $i;
+					$i++;
+					$full_col = ($odd && $last);
+					if ($section->post_thumbnail_url) :
+				?>
+						<div class="col <?php echo ($full_col) ? '' : 'l6'; ?> s12">
+							<div class="card hoverable medium">
+								<div class="card-image">
+									<img src="<?php echo $section->post_thumbnail_url ?>">
+									<h2 class="card-title heading"><?php echo $section->post_title ?></h2>
+								</div>
+								<div class="card-content">
+									<?php echo $post->post_excerpt ?>
+								</div>
+								<div class="card-action">
+									<a href="#">Read more</a>
+								</div>
+							</div>
 						</div>
-						<div class="card-content">
-							<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+				<?php else : ?>
+						<div class="col <?php echo ($full_col) ? '' : 'l6'; ?> s12">
+							<div class="section-valign valign-wrapper">
+								<div class="valign">
+									<h2 class="heading"><?php echo $section->post_title ?></h2>
+									<p><?php echo apply_filters('the_excerpt', $section->post_excerpt) ?></p>
+								</div>
+							</div>
 						</div>
-						<div class="card-action">
-							<a href="#">Read more</a>
-						</div>
-					</div>
-				</div>
-				<div class="col l6 s12">
-					<div class="section-valign valign-wrapper">
-						<div class="valign">
-							<h2 class="heading">BOOK AN APOINTMENT</h2>
-							<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. <a href="#" class="rm">Read more</a></p>
-						</div>
-					</div>
-				</div>
-				<div class="col l6 s12">
-					<div class="section-valign valign-wrapper">
-						<div class="valign">
-							<h2 class="heading">OUR DOCTORS</h2>
-							<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. <a href="#" class="rm">Read more</a></p>
-						</div>
-					</div>
-				</div>
-				<div class="col l6 s12">
-					<div class="card hoverable medium">
-						<div class="card-image">
-							<img src="<?php echo get_template_directory_uri() . '/img/our-treatments.jpg'; ?>">
-							<h2 class="card-title heading">OUR TREATMENTS</h2>
-						</div>
-						<div class="card-content">
-							<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
-						</div>
-						<div class="card-action">
-							<a href="#">Read more</a>
-						</div>
-					</div>
-				</div>
+				<?php endif; ?>
+				<?php endforeach; ?>
 			</div>
 		</div>
 		<div class="clearfix"></div>
