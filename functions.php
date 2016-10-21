@@ -39,7 +39,7 @@ if ( ! function_exists( 'material_design_excerpt_more' ) ) :
 	 */
 	function material_design_excerpt_more($excerpt) {
 		global $post;
-		return $post->post_excerpt . '...<a href="'. get_permalink($post->ID) . '">Read more</a>';
+		return $post->post_excerpt . '...<a class="read-more" href="'. get_permalink($post->ID) . '">' . __('Read more', 'mmd') . '</a>';
 	}
 endif;
 add_filter('the_excerpt', 'material_design_excerpt_more');

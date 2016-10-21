@@ -85,3 +85,8 @@ strong { font-weight: 700; }
     padding: 1rem;
   }
 }
+
+a.read-more {
+  color: $primary-color;
+  &:hover { color: $primary-color-light; }
+}

@@ -59,7 +59,7 @@ get_header(); ?>
 									<?php echo $post->post_excerpt ?>
 								</div>
 								<div class="card-action">
-									<a href="#">Read more</a>
+									<a href="#"><?php _e('Read more', 'mmd') ?></a>
 								</div>
 							</div>
 						</div>
