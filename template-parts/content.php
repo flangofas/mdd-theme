@@ -22,12 +22,10 @@
 					<?php if (!has_post_thumbnail()) : ?>
 						<p><span class="card-title"><?php the_title() ?></span></p>
 					<?php endif; ?>
-					<?php
-					echo get_the_excerpt();
-					?>
+					<?php echo get_the_excerpt(); ?>
 				</div>
 				<div class="card-action">
-					<a href="<?php esc_url( get_permalink() ) ?>">Read more</a>
+					<a href="<?php echo esc_url( get_post_permalink() ) ?>"><?php _e('Read more', 'mdd') ?></a>
 				</div>
 			</div>
 		</article><!-- #post-## -->
