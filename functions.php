@@ -8,23 +8,27 @@
  */
 
 if ( ! function_exists( 'material_design_get_sections' ) ) :
-/**
- * Gather featured pages and add post_thumbnail_url property to WP_Post object.
- *
- * @return array Array of WP_Post objects
- */
-function material_design_get_sections() {
-	$args = [
-		'sort_column' => 'menu_order',
-	];
-	$pages = get_pages($args);
-	foreach ($pages as $index => $page) {
-		if (!get_post_meta( $page->ID, 'featured', true )) {
-			unset($pages[$index]);
-			continue;
+	/**
+	 * Gather featured pages and add post_thumbnail_url property to WP_Post object.
+	 *
+	 * @return array Array of WP_Post objects
+	 */
+	function material_design_get_sections() {
+		$args = [
+			'sort_column' => 'menu_order',
+		];
+		$pages = get_pages($args);
+		foreach ($pages as $index => $page) {
+			if (!get_post_meta( $page->ID, 'featured', true )) {
+				unset($pages[$index]);
+				continue;
+			}
+			$page->post_thumbnail_url = get_the_post_thumbnail_url($page->ID);
 		}
-		$page->post_thumbnail_url = get_the_post_thumbnail_url($page->ID);
+
+		return $pages;
 	}
+endif;
 
 	return $pages;
 }
