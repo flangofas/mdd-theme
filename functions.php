@@ -30,10 +30,6 @@ if ( ! function_exists( 'material_design_get_sections' ) ) :
 	}
 endif;
 
-	return $pages;
-}
-endif;
-
 if ( ! function_exists( 'material_design_excerpt_more' ) ) :
 	/**
 	 * Append read more to page excerpt.
