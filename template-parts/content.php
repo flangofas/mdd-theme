@@ -12,11 +12,16 @@
 	<div class="col s12">
 		<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 			<div class="card">
-				<div class="card-image">
-					<img src="<?php the_post_thumbnail_url() ?>">
-					<span class="card-title"><?php the_title() ?></span>
-				</div>
+				<?php if (has_post_thumbnail()) : ?>
+					<div class="card-image">
+						<img src="<?php the_post_thumbnail_url() ?>">
+						<span class="card-title"><?php the_title() ?></span>
+					</div>
+				<?php endif; ?>
 				<div class="card-content">
+					<?php if (!has_post_thumbnail()) : ?>
+						<p><span class="card-title"><?php the_title() ?></span></p>
+					<?php endif; ?>
 					<?php
 					echo get_the_excerpt();
 					?>
