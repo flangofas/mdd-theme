@@ -7,6 +7,63 @@
  * @package Material_Design_Dentistry
  */
 
+if ( ! function_exists( 'material_design_custom_type_slide' ) ) :
+	/**
+	 * Register a custom post type called "slide".
+	 *
+	 * @see get_post_type_labels() for label keys.
+	 */
+	function material_design_custom_type_slide() {
+	    $labels = array(
+	        'name'                  => _x( 'Slides', 'Post type general name', 'mdd' ),
+	        'singular_name'         => _x( 'Slide', 'Post type singular name', 'mdd' ),
+	        'menu_name'             => _x( 'Slides', 'Admin Menu text', 'mdd' ),
+	        'name_admin_bar'        => _x( 'Slide', 'Add New on Toolbar', 'mdd' ),
+	        'add_new'               => __( 'Add New', 'mdd' ),
+	        'add_new_item'          => __( 'Add New Slide', 'mdd' ),
+	        'new_item'              => __( 'New Slide', 'mdd' ),
+	        'edit_item'             => __( 'Edit Slide', 'mdd' ),
+	        'view_item'             => __( 'View Slide', 'mdd' ),
+	        'all_items'             => __( 'All Slides', 'mdd' ),
+	        'search_items'          => __( 'Search Slides', 'mdd' ),
+	        'parent_item_colon'     => __( 'Parent Slides:', 'mdd' ),
+	        'not_found'             => __( 'No slides found.', 'mdd' ),
+	        'not_found_in_trash'    => __( 'No slides found in Trash.', 'mdd' ),
+	        'featured_image'        => _x( 'Slide Image', 'Overrides the “Featured Image” phrase for this post type. Added in 4.3', 'mdd' ),
+	        'set_featured_image'    => _x( 'Set image', 'Overrides the “Set featured image” phrase for this post type. Added in 4.3', 'mdd' ),
+	        'remove_featured_image' => _x( 'Remove image', 'Overrides the “Remove featured image” phrase for this post type. Added in 4.3', 'mdd' ),
+	        'use_featured_image'    => _x( 'Use as image', 'Overrides the “Use as featured image” phrase for this post type. Added in 4.3', 'mdd' ),
+	        'archives'              => _x( 'Slide archives', 'The post type archive label used in nav menus. Default “Post Archives”. Added in 4.4', 'mdd' ),
+	        'insert_into_item'      => _x( 'Insert into slide', 'Overrides the “Insert into post”/”Insert into page” phrase (used when inserting media into a post). Added in 4.4', 'mdd' ),
+	        'uploaded_to_this_item' => _x( 'Uploaded to this slide', 'Overrides the “Uploaded to this post”/”Uploaded to this page” phrase (used when viewing media attached to a post). Added in 4.4', 'mdd' ),
+	        'filter_items_list'     => _x( 'Filter slides list', 'Screen reader text for the filter links heading on the post type listing screen. Default “Filter posts list”/”Filter pages list”. Added in 4.4', 'mdd' ),
+	        'items_list_navigation' => _x( 'Slides list navigation', 'Screen reader text for the pagination heading on the post type listing screen. Default “Posts list navigation”/”Pages list navigation”. Added in 4.4', 'mdd' ),
+	        'items_list'            => _x( 'Slides list', 'Screen reader text for the items list heading on the post type listing screen. Default “Posts list”/”Pages list”. Added in 4.4', 'mdd' ),
+	    );
+
+	    $args = array(
+	        'labels'             => $labels,
+	        'public'             => true,
+	        'publicly_queryable' => true,
+	        'show_ui'            => true,
+	        'show_in_menu'       => true,
+	        'query_var'          => true,
+	        'rewrite'            => array( 'slug' => 'slide' ),
+	        'capability_type'    => 'post',
+	        'has_archive'        => true,
+	        'hierarchical'       => false,
+	        'menu_position'      => null,
+	        'supports'           => array( 'title', 'editor', 'thumbnail', 'custom-fields', 'page-attributes'),
+	    );
+
+	    register_post_type( 'slide', $args );
+	}
+
+endif;
+
+add_action( 'init', 'material_design_custom_type_slide' );
+
+
 if ( ! function_exists( 'material_design_get_sections' ) ) :
 	/**
 	 * Gather featured pages and add post_thumbnail_url property to WP_Post object.
