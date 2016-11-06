@@ -7,6 +7,10 @@ body.page {
   background-color: $mmd-grey;
 }
 
+body.page.home {
+  background-color: #fff;
+}
+
 strong { font-weight: 700; }
 
 .rm {
