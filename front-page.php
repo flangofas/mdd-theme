@@ -35,6 +35,8 @@ get_header(); ?>
 			</div>
 		<?php
 		endwhile;
+		wp_reset_query();
+		unset($query);
 		?>
 		<div class="section split medium">
 			<div class="row no-gutter">
@@ -77,23 +79,30 @@ get_header(); ?>
 			</div>
 		</div>
 		<div class="clearfix"></div>
-		<div class="section sm" style="background-image: url('<?php echo get_template_directory_uri() . '/img/social-media.jpg'; ?>');">
-			<div class="container sm-content">
-				<div class="row">
-					<div class="col offset-l3 l6 s12">
-						<h2 class="heading">Dr.Leonidou Clinic</h2>
-						<div class="sm-post">
-							<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-							<p><small>July 8 at 7:29am</small></p>
-						</div>
-						<div class="sm-post">
-							<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-							<p><small>July 8 at 7:29am</small></p>
+		<?php
+		$args = [
+			'pagename' => 'social-media',
+			'post_type' => 'page',
+		];
+		$query = new WP_Query( $args );
+		while ( $query->have_posts() ) :
+			$query->the_post();
+		?>
+			<div class="section sm" style="background-image: url('<?php echo get_the_post_thumbnail_url() ?>');">
+				<div class="container sm-content">
+					<div class="row">
+						<div class="col offset-l3 l6 s12">
+							<h2 class="heading"><?php the_title(); ?></h2>
+							<?php the_content(); ?>
 						</div>
 					</div>
 				</div>
 			</div>
-		</div>
+		<?php
+		endwhile;
+		wp_reset_query();
+		unset($query);
+		?>
 	</main><!-- #main -->
 </div><!-- #primary -->
 <?php
