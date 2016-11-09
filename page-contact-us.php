@@ -16,14 +16,16 @@ get_header();
             ?>
             <div class="content-area">
                 <div class="container">
-                    <div class="row">
+                    <div class="row contact-form">
                         <?php
                         /**
                          * @todo: Should be taken from custom fields rather than hardcoded shortcodes
                          */
                         ?>
                         <div class="col l5 s12"><?php echo do_shortcode('[wpgmza id="1"]'); ?></div>
-                        <div class="col offset-l1 l6 s12"><?php echo do_shortcode('[contact-form-7 id="3" title="Contact form 1"]'); ?></div>
+                        <div class="col offset-l1 l6 s12 ">
+                            <?php echo do_shortcode('[contact-form-7 id="3" title="Contact form 1"]'); ?>
+                        </div>
                     </div>
                 </div>
             </div>
