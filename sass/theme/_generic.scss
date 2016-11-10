@@ -94,6 +94,9 @@ a.read-more {
   &:hover { color: $primary-color-light; }
 }
 
-.contact-form {
+.main-content {
   background-color: #fff;
+  &.breathing-space {
+    padding: 1em;
+  }
 }

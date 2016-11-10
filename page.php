@@ -21,9 +21,7 @@ get_header(); ?>
 				get_template_part( 'template-parts/main', 'title' );
 			?>
 				<div class="content-area">
-					<div class="container">
-						<?php get_template_part( 'template-parts/content', 'page' ); ?>
-					</div>
+					<?php get_template_part( 'template-parts/content', 'page' ); ?>
 				</div>
 			<?php
 				// If comments are open or we have at least one comment, load up the comment template.

@@ -12,14 +12,20 @@
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<div class="entry-content">
 		<div class="container">
-		<?php
-			the_content();
+			<div class="row">
+				<div class="col s12">
+					<div class="main-content breathing-space">
+					<?php
+						the_content();
 
-			wp_link_pages( array(
-				'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'material-design-dentistry' ),
-				'after'  => '</div>',
-			) );
-		?>
+						wp_link_pages( array(
+							'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'material-design-dentistry' ),
+							'after'  => '</div>',
+						) );
+					?>
+					</div>
+				</div>
+			</div>
 		</div><!-- .container -->
 	</div><!-- .entry-content -->
 
