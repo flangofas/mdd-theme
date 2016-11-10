@@ -3,6 +3,8 @@ body {
   color: color('grey', 'darken-1');
 }
 
+body.blog,
+body.single,
 body.page {
   background-color: $mmd-grey;
 }
