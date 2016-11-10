@@ -35,8 +35,6 @@ get_header(); ?>
 			</div>
 		<?php
 		endwhile;
-		wp_reset_query();
-		unset($query);
 		?>
 		<div class="section split medium">
 			<div class="row no-gutter">
@@ -80,6 +78,8 @@ get_header(); ?>
 		</div>
 		<div class="clearfix"></div>
 		<?php
+		wp_reset_query();
+		unset($query);
 		$args = [
 			'pagename' => 'social-media',
 			'post_type' => 'page',
