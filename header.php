@@ -34,26 +34,24 @@
 
 	<header id="masthead" class="site-header" role="banner">
 		<!-- Dropdown Structure -->
-		<ul id="dropdown1" class="dropdown-content">
-			<li><a href="#!">one</a></li>
-			<li><a href="#!">two</a></li>
-			<li class="divider"></li>
-			<li><a href="#!">three</a></li>
+		<ul id="our-doctors" class="dropdown-content">
+			<li><a href="/dr-andreas-leonidou/">Dr Andreas Leonidou</a></li>
+			<li><a href="/dr-alexandros-leonidou/">Dr Alexandros Leonidou</a></li>
 		</ul>
 		<nav>
 			<div class="container">
 				<div class="nav-wrapper">
 					<a href="/" class="brand-logo center"><img src="<?php echo get_template_directory_uri() . '/img/logo.png'; ?>" alt="Site logo"></a>
 					<ul id="nav-mobile" class="left hide-on-med-and-down">
-						<li><a class="dropdown-button" href="#!" data-activates="dropdown1">OUR DOCTORS<i class="material-icons right">arrow_drop_down</i></a></li>
+						<li><a class="dropdown-button" href="#!" data-activates="our-doctors">OUR DOCTORS<i class="material-icons right">arrow_drop_down</i></a></li>
 						<li><a href="badges.html">OUR CLINIC</a></li>
 						<li><a href="collapsible.html">TREATMENTS</a></li>
 					</ul>
 					<ul id="nav-mobile" class="right hide-on-med-and-down">
-						<li><a href="sass.html">ARTICLES</a></li>
-						<li><a href="badges.html">VIDEOS</a></li>
-						<li><a href="collapsible.html">Q&amp;A</a></li>
-						<li><a href="collapsible.html">CONTACT US</a></li>
+						<li><a href="/blog/">ARTICLES</a></li>
+						<li><a href="/videos/">VIDEOS</a></li>
+						<li><a href="/faq/">FAQ</a></li>
+						<li><a href="/contact-us/">CONTACT US</a></li>
 					</ul>
 				</div>
 			</div>
