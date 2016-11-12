@@ -226,7 +226,8 @@ function material_design_dentistry_scripts() {
 	wp_enqueue_script( 'material-custom', get_template_directory_uri() . '/js/theme/init.js', array(), '1.0', false );
 	wp_enqueue_script( 'material-custom', get_template_directory_uri() . '/js/theme/navigation.js', array(), '1.0', false );
 	wp_enqueue_style( 'material-design-dentistry-style', get_stylesheet_uri() );
-
+	//Remove materialize shorcode plugin's bundle as the project already loads the JS assets.
+	wp_deregister_script('M-Script-bundle');
 }
 add_action( 'wp_enqueue_scripts', 'material_design_dentistry_scripts' );
 
