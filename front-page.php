@@ -35,6 +35,8 @@ get_header(); ?>
 			</div>
 		<?php
 		endwhile;
+		wp_reset_query();
+		unset($query);
 		?>
 		<div class="section split medium">
 			<div class="row no-gutter">
@@ -68,7 +70,7 @@ get_header(); ?>
 							<div class="section-valign valign-wrapper">
 								<div class="valign">
 									<h2 class="heading"><?php echo $section->post_title ?></h2>
-									<p><?php echo apply_filters('the_excerpt', $section->post_excerpt) ?></p>
+									<p><?php echo material_design_the_excerpt($section); ?></p>
 								</div>
 							</div>
 						</div>

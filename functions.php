@@ -88,19 +88,17 @@ if ( ! function_exists( 'material_design_get_sections' ) ) :
 	}
 endif;
 
-if ( ! function_exists( 'material_design_excerpt_more' ) ) :
+if ( ! function_exists( 'material_design_the_excerpt' ) ) :
 	/**
 	 * Append read more to page excerpt.
 	 *
 	 * @param  [type] $excerpt [description]
 	 * @return [type]          [description]
 	 */
-	function material_design_excerpt_more($excerpt) {
-		global $post;
+	function material_design_the_excerpt($post) {
 		return $post->post_excerpt . '...<a class="read-more" href="'. get_permalink($post->ID) . '">' . __('Read more', 'mmd') . '</a>';
 	}
 endif;
-add_filter('the_excerpt', 'material_design_excerpt_more');
 
 if ( ! function_exists( 'material_design_add_excerpt_to_pages' ) ) :
 	/**
