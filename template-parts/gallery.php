@@ -1,4 +1,4 @@
-<div class="container gallery">
+<div class="container gallery main-content breathing-space">
 	<div class="row">
 		<div class="col s12">
 			<?php the_content(); ?>
