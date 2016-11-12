@@ -56,10 +56,10 @@ get_header(); ?>
 									<h2 class="card-title heading"><?php echo $section->post_title ?></h2>
 								</div>
 								<div class="card-content">
-									<?php echo $post->post_excerpt ?>
+									<?php echo $section->post_excerpt ?>
 								</div>
 								<div class="card-action">
-									<a href="#"><?php _e('Read more', 'mmd') ?></a>
+									<a href="<?php echo $section->link ?>"><?php _e('Read more', 'mmd') ?></a>
 								</div>
 							</div>
 						</div>
@@ -72,8 +72,8 @@ get_header(); ?>
 								</div>
 							</div>
 						</div>
-				<?php endif; ?>
-				<?php endforeach; ?>
+				<?php endif;
+				endforeach; ?>
 			</div>
 		</div>
 		<div class="clearfix"></div>

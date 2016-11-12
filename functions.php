@@ -80,6 +80,7 @@ if ( ! function_exists( 'material_design_get_sections' ) ) :
 				unset($pages[$index]);
 				continue;
 			}
+			$page->link = get_page_link($page->ID);
 			$page->post_thumbnail_url = get_the_post_thumbnail_url($page->ID);
 		}
 
