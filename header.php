@@ -35,8 +35,8 @@
 	<header id="masthead" class="site-header" role="banner">
 		<!-- Dropdown Structure -->
 		<ul id="our-doctors" class="dropdown-content">
-			<li><a href="/dr-andreas-leonidou/">Dr Andreas Leonidou</a></li>
-			<li><a href="/dr-alexandros-leonidou/">Dr Alexandros Leonidou</a></li>
+			<li><a href="/orthodontist/">Orthodontist</a></li>
+			<li><a href="/paediatric/">Paediatric</a></li>
 		</ul>
 		<nav>
 			<div class="container">
@@ -44,8 +44,9 @@
 					<a href="/" class="brand-logo center"><img src="<?php echo get_template_directory_uri() . '/img/logo.png'; ?>" alt="Site logo"></a>
 					<ul id="nav-mobile" class="left hide-on-med-and-down">
 						<li><a class="dropdown-button" href="#!" data-activates="our-doctors">OUR DOCTORS<i class="material-icons right">arrow_drop_down</i></a></li>
-						<li><a href="badges.html">OUR CLINIC</a></li>
-						<li><a href="collapsible.html">TREATMENTS</a></li>
+						<li><a href="/our-clinic/">OUR CLINIC</a></li>
+						<li><a href="/our-treatments/">TREATMENTS</a></li>
+						<li><a href="/first-visit/">FIRST VISIT</a></li>
 					</ul>
 					<ul id="nav-mobile" class="right hide-on-med-and-down">
 						<li><a href="/blog/">ARTICLES</a></li>
