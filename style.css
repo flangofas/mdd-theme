@@ -3082,6 +3082,19 @@ nav {
     nav .brand-logo.center {
       left: 50%;
       transform: translateX(-50%); }
+      @media only screen and (min-width: 993px) and (max-width: 1200px) {
+        nav .brand-logo.center {
+          left: 52.5%;
+          transform: translateX(-47.5%); } }
+      @media only screen and (max-width: 992px) {
+        nav .brand-logo.center img {
+          width: 50%; } }
+      @media only screen and (min-width: 993px) and (max-width: 1200px) {
+        nav .brand-logo.center img {
+          width: 60%; } }
+      @media only screen and (min-width: 1201px) {
+        nav .brand-logo.center img {
+          width: 100%; } }
     @media only screen and (max-width: 992px) {
       nav .brand-logo {
         left: 50%;
@@ -3117,6 +3130,9 @@ nav {
       display: block;
       padding: 0 15px;
       cursor: pointer; }
+      @media only screen and (min-width: 993px) and (max-width: 1200px) {
+        nav ul a {
+          padding: 0 5px; } }
       nav ul a.btn, nav ul a.btn-large, nav ul a.btn-large, nav ul a.btn-flat, nav ul a.btn-floating {
         margin-top: -2px;
         margin-left: 15px;
@@ -6553,6 +6569,9 @@ body.page.home {
 strong {
   font-weight: 700; }
 
+.dropdown-button i.material-icons.right {
+  margin-left: 0; }
+
 .rm {
   color: #ffab40; }
   .rm:hover {
@@ -6622,6 +6641,9 @@ a.read-more {
   background-color: #fff; }
   .main-content.breathing-space {
     padding: 1em; }
+
+ul.menu-footer-left li a {
+  color: #212121; }
 
 /**
  * Theme specific
