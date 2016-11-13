@@ -5,6 +5,7 @@ jQuery(document).ready(function ($) {
     $('.slider').slider({full_width: true, height: 700, indicators: false});
     $('.carousel').carousel();
     $('.materialboxed').materialbox();
+    $(".button-collapse").sideNav();
     //Removes span wrapper and br tags in the form of CF7 plugin
     //@link: http://gmkhussain.blogspot.com.cy/2015/12/remove-span-elements-from-contact-form.html
     var cf7input = $( ".wpcf7-form-control" );
