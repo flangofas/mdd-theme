@@ -108,3 +108,11 @@ a.read-more {
     padding: 1em;
   }
 }
+
+ul.menu-footer-left {
+  li {
+    a {
+      color: color("grey", "darken-4");
+    }
+  }
+}

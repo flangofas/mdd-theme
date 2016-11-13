@@ -15,12 +15,14 @@
 			<div class="row">
 				<div class="col l4 s12">
 					<h6>NAVIGATION LINKS</h6>
-					<ul>
-						<li><a class="grey-text text-darken-4" href="#!">Link 1</a></li>
-						<li><a class="grey-text text-darken-4" href="#!">Link 2</a></li>
-						<li><a class="grey-text text-darken-4" href="#!">Link 3</a></li>
-						<li><a class="grey-text text-darken-4" href="#!">Link 4</a></li>
-					</ul>
+					<?php
+						$args = [
+							'menu' => 'Footer left',
+							'theme_location' => 'footer-left',
+							'menu_class' => 'menu-footer-left'
+						];
+						wp_nav_menu( $args );
+					?>
 				</div>
 				<div class="col l4 s12">
 					<h6>CONTACT US</h6>
@@ -31,11 +33,14 @@
 				</div>
 				<div class="col l4 s12">
 					<h6>SOCIAL MEDIA</h6>
-					<ul class="list-inline">
-						<li><a href="#"><img src="<?php echo get_template_directory_uri() . '/img/fb-icon.png'; ?>"></a></li>
-						<li><a href="#"><img src="<?php echo get_template_directory_uri() . '/img/gplus-icon.png'; ?>"></a></li>
-						<li><a href="#"><img src="<?php echo get_template_directory_uri() . '/img/in-icon.png'; ?>"></a></li>
-					</ul>
+					<?php
+						$args = [
+							'menu' => 'Footer social media',
+							'theme_location' => 'footer-social-media',
+							'menu_class' => 'list-inline menu-footer-social-media'
+						];
+						wp_nav_menu( $args );
+					?>
 					<div class="fb-like" data-href="https://www.facebook.com/Dr.Leonidou" data-layout="standard" data-action="like" data-size="small" data-show-faces="true" data-share="true"></div>
 				</div>
 			</div>
