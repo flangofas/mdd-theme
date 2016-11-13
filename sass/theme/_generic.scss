@@ -15,6 +15,12 @@ body.page.home {
 
 strong { font-weight: 700; }
 
+.dropdown-button {
+  i.material-icons.right {
+      margin-left: 0;
+  }
+}
+
 .rm {
   color: $primary-color;
   &:hover { color: $primary-color-light; }

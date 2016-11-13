@@ -46,7 +46,6 @@
 						<li><a class="dropdown-button" href="#!" data-activates="our-doctors">OUR DOCTORS<i class="material-icons right">arrow_drop_down</i></a></li>
 						<li><a href="/our-clinic/">OUR CLINIC</a></li>
 						<li><a href="/our-treatments/">TREATMENTS</a></li>
-						<li><a href="/first-visit/">FIRST VISIT</a></li>
 					</ul>
 					<ul id="nav-mobile" class="right hide-on-med-and-down">
 						<li><a href="/blog/">ARTICLES</a></li>
