@@ -90,7 +90,7 @@ get_header(); ?>
 		while ( $query->have_posts() ) :
 			$query->the_post();
 		?>
-			<div class="section sm" style="background-image: url('<?php echo get_the_post_thumbnail_url() ?>');">
+			<div class="section sm" style="background-image: url('<?php echo get_the_post_thumbnail_url() ?>'); background-position: center center;">
 				<div class="container sm-content">
 					<div class="row">
 						<div class="col offset-l3 l6 s12">
