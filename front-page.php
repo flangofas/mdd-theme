@@ -38,7 +38,7 @@ get_header(); ?>
 		wp_reset_query();
 		unset($query);
 		?>
-		<div class="section split medium">
+		<div class="section split">
 			<div class="row no-gutter">
 				<?php
 				$sections = material_design_get_sections();
