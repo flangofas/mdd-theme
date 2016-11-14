@@ -37,6 +37,28 @@ get_header(); ?>
 		endwhile;
 		wp_reset_query();
 		unset($query);
+		$args = [
+			'pagename' => 'social-media',
+			'post_type' => 'page',
+		];
+		$query = new WP_Query( $args );
+		while ( $query->have_posts() ) :
+			$query->the_post();
+		?>
+			<div class="section sm" style="background-image: url('<?php echo get_the_post_thumbnail_url() ?>'); background-position: center center;">
+				<div class="container sm-content">
+					<div class="row">
+						<div class="col offset-l3 l6 s12">
+							<h2 class="heading"><?php the_title(); ?></h2>
+							<?php the_content(); ?>
+						</div>
+					</div>
+				</div>
+			</div>
+		<?php
+		endwhile;
+		wp_reset_query();
+		unset($query);
 		?>
 		<div class="section split">
 			<div class="row no-gutter">
@@ -79,32 +101,6 @@ get_header(); ?>
 			</div>
 		</div>
 		<div class="clearfix"></div>
-		<?php
-		wp_reset_query();
-		unset($query);
-		$args = [
-			'pagename' => 'social-media',
-			'post_type' => 'page',
-		];
-		$query = new WP_Query( $args );
-		while ( $query->have_posts() ) :
-			$query->the_post();
-		?>
-			<div class="section sm" style="background-image: url('<?php echo get_the_post_thumbnail_url() ?>'); background-position: center center;">
-				<div class="container sm-content">
-					<div class="row">
-						<div class="col offset-l3 l6 s12">
-							<h2 class="heading"><?php the_title(); ?></h2>
-							<?php the_content(); ?>
-						</div>
-					</div>
-				</div>
-			</div>
-		<?php
-		endwhile;
-		wp_reset_query();
-		unset($query);
-		?>
 	</main><!-- #main -->
 </div><!-- #primary -->
 <?php
