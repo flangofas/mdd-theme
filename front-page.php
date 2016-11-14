@@ -60,7 +60,7 @@ get_header(); ?>
 		wp_reset_query();
 		unset($query);
 		?>
-		<div class="section split">
+		<div class="section split large">
 			<div class="row no-gutter">
 				<?php
 				$sections = material_design_get_sections();
