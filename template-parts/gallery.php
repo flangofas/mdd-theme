@@ -10,12 +10,11 @@
 		$current_page = sanitize_post( $GLOBALS['wp_the_query']->get_queried_object() );
 		// Get the page slug
 		$slug = $current_page->post_name;
-		$template = basename(str_replace('page-', '', get_page_template()), '.php');
-		$args = [
-			'page_template' => $template,
-			'page_slug' => $slug,
+		$options = [
+			'slug' => $slug,
+			'form' => 'gallery',
 		];
-		$items = material_design_get_attachments($args);
+		$items = material_design_get_attachments($options);
 		foreach ($items as $item) :
 			$caption = $item->post_excerpt ?: false;
 			?>

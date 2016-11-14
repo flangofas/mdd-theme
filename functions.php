@@ -8,21 +8,44 @@
  */
 
 if ( ! function_exists( 'material_design_get_attachments' ) ) :
-	function material_design_get_attachments($args = []) {
-		$args += ['post_type' => 'attachment', 'posts_per_page' => -1];
-		$attachments = get_posts($args);
-		if (
-			!empty($args['page_template']) &&
-			!empty($args['page_slug'])
-			) {
-			$naming_convention = $args['page_template'] . '-' . $args['page_slug'];
-			foreach ($attachments as $key => $att) {
-				if (strpos($att->post_name, $naming_convention) === false) {
-					unset($attachments[$key]);
 
-				}
-			}
+	/**
+	 * Return attachments based on custom fields.
+	 *
+	 * Allowed custom field values:
+	 * - form: The form of attachment
+	 * - slug: It is the slug of the page
+	 * WP uses the above options to map the page with the attachments in the provided format.
+	 * Forms are basically form of attachment's presentation i.e. carousel, gallery etc.
+	 *
+	 * @param  array  $options Form and slug should be set.
+	 * @return array
+	 */
+	function material_design_get_attachments($options = []) {
+		if (
+			!isset($options['form']) &&
+			!isset($options['slug'])) {
+			return [];
 		}
+		$args = [
+			'meta_query' => [
+				[
+					'key' => 'form',
+					'value' => $options['form'],
+				],
+				[
+					'key' => 'pages_to_show',
+					'value' => $options['slug'],
+					'compare' => 'LIKE',
+				],
+			],
+			'numberposts' => -1,
+			'post_type' => 'attachment',
+			'orderby' => 'title',
+			'order' => 'ASC'
+		];
+		$attachments = get_posts($args);
+
 		return $attachments;
 	}
 endif;
