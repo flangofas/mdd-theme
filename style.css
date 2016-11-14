@@ -6655,10 +6655,12 @@ ul.menu-footer-left li a {
   font-weight: bold; }
   .section.medium {
     height: 400px; }
+  .section.large {
+    height: 500px; }
   .section > .row {
     margin-bottom: 0; }
   .section .section-valign {
-    height: 400px;
+    height: 500px;
     padding: 2rem; }
 
 .section.section-first {
@@ -6670,8 +6672,8 @@ ul.menu-footer-left li a {
 
 .sm {
   background-size: cover;
-  min-height: 200px;
-  max-height: 350px;
+  min-height: 450px;
+  max-height: 500px;
   background-size: cover;
   color: #212121; }
 
