@@ -7,6 +7,26 @@
  * @package Material_Design_Dentistry
  */
 
+if ( ! function_exists( 'material_design_get_attachments' ) ) :
+	function material_design_get_attachments($args = []) {
+		$args += ['post_type' => 'attachment', 'posts_per_page' => -1];
+		$attachments = get_posts($args);
+		if (
+			!empty($args['page_template']) &&
+			!empty($args['page_slug'])
+			) {
+			$naming_convention = $args['page_template'] . '-' . $args['page_slug'];
+			foreach ($attachments as $key => $att) {
+				if (strpos($att->post_name, $naming_convention) === false) {
+					unset($attachments[$key]);
+
+				}
+			}
+		}
+		return $attachments;
+	}
+endif;
+
 if ( ! function_exists( 'material_design_custom_type_slide' ) ) :
 	/**
 	 * Register a custom post type called "slide".

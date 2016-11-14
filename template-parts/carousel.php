@@ -1,11 +1,18 @@
 <div class="carousel mmd-carousel">
-	<a class="carousel-item" href="#one!"><img src="<?php echo get_template_directory_uri() . '/img/teeth/1.jpg'; ?>"></a>
-	<a class="carousel-item" href="#two!"><img src="<?php echo get_template_directory_uri() . '/img/teeth/2.jpg'; ?>"></a>
-	<a class="carousel-item" href="#three!"><img src="<?php echo get_template_directory_uri() . '/img/teeth/3.jpg'; ?>"></a>
-	<a class="carousel-item" href="#four!"><img src="<?php echo get_template_directory_uri() . '/img/teeth/4.jpg'; ?>"></a>
-	<a class="carousel-item" href="#five!"><img src="<?php echo get_template_directory_uri() . '/img/teeth/5.jpg'; ?>"></a>
-	<a class="carousel-item" href="#six!"><img src="<?php echo get_template_directory_uri() . '/img/teeth/6.jpg'; ?>"></a>
-	<a class="carousel-item" href="#seven!"><img src="<?php echo get_template_directory_uri() . '/img/teeth/7.jpg'; ?>"></a>
-	<a class="carousel-item" href="#eight!"><img src="<?php echo get_template_directory_uri() . '/img/teeth/8.jpg'; ?>"></a>
-	<a class="carousel-item" href="#nine!"><img src="<?php echo get_template_directory_uri() . '/img/teeth/9.jpg'; ?>"></a>
+<?php
+// Get the queried object and sanitize it
+$current_page = sanitize_post( $GLOBALS['wp_the_query']->get_queried_object() );
+// Get the page slug
+$slug = $current_page->post_name;
+$template = basename(str_replace('page-', '', get_page_template()), '.php');
+$args = [
+	'page_template' => $template,
+	'page_slug' => $slug,
+];
+$items = material_design_get_attachments($args);
+foreach ($items as $item) : ?>
+		<a class="carousel-item" href="#"><img src="<?php echo $item->guid ?>"></a>
+<?php
+endforeach;
+?>
 </div>

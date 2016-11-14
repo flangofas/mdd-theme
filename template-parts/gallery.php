@@ -5,10 +5,23 @@
 		</div>
 	</div>
 	<div class="row">
-		<?php for ($i=1;$i<14;$i++) : ?>
-		<div class="col s12 m3">
-			<img class="responsive-img materialboxed" data-caption="A picture of some deer and tons of trees" src="<?php echo get_template_directory_uri() . '/img/gallery/' . $i . '.jpg'; ?>" />
-		</div>
-		<?php endfor; ?>
+		<?php
+		// Get the queried object and sanitize it
+		$current_page = sanitize_post( $GLOBALS['wp_the_query']->get_queried_object() );
+		// Get the page slug
+		$slug = $current_page->post_name;
+		$template = basename(str_replace('page-', '', get_page_template()), '.php');
+		$args = [
+			'page_template' => $template,
+			'page_slug' => $slug,
+		];
+		$items = material_design_get_attachments($args);
+		foreach ($items as $item) :
+			$caption = $item->post_excerpt ?: false;
+			?>
+			<div class="col s12 m3">
+				<img class="responsive-img materialboxed" src="<?php echo $item->guid ?>" <?php echo ($caption) ? 'data-caption="$caption"' : '' ?>" />
+			</div>
+		<?php endforeach; ?>
 	</div>
 </div>
