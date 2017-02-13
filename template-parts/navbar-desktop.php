@@ -1,7 +1,11 @@
 <!-- Dropdown Structure -->
 <ul id="our-doctors" class="dropdown-content">
-	<li><a href="/orthodontist/">Orthodontist</a></li>
-	<li><a href="/paediatric/">Paediatric</a></li>
+	<li><a href="/our-doctors/orthodontist/">Orthodontist</a></li>
+	<li><a href="/our-doctors/pediatric/">Pediatric</a></li>
+</ul>
+<ul id="treatments" class="dropdown-content">
+	<li><a href="/treatments/orthodontic/">Orthodontist</a></li>
+	<li><a href="/treatments/pediatric/">Pediatric</a></li>
 </ul>
 <nav>
 	<div class="container">
@@ -11,7 +15,7 @@
 			<ul id="nav-mobile" class="left hide-on-med-and-down">
 				<li><a class="dropdown-button" href="#!" data-beloworigin="true" data-activates="our-doctors">OUR DOCTORS<i class="material-icons right">arrow_drop_down</i></a></li>
 				<li><a href="/our-clinic/">OUR CLINIC</a></li>
-				<li><a href="/our-treatments/">TREATMENTS</a></li>
+				<li><a class="dropdown-button" href="#!" data-beloworigin="true" data-activates="treatments">TREATMENTS<i class="material-icons right">arrow_drop_down</i></a></li>
 			</ul>
 			<ul id="nav-mobile" class="right hide-on-med-and-down">
 				<li><a href="/blog/">ARTICLES</a></li>
