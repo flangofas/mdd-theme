@@ -1,15 +1,15 @@
 <!-- Dropdown Structure -->
 <ul id="our-doctors" class="dropdown-content">
 	<li><a href="/our-doctors/orthodontist/">Orthodontist</a></li>
-	<li><a href="/our-doctors/paediatric/">Paediatric</a></li>
+	<li><a href="/our-doctors/paediatric-dentist/">Paediatric Dentist</a></li>
 </ul>
 <ul id="treatments" class="dropdown-content">
 	<li><a href="/treatments/orthodontic/">Orthodontic</a></li>
-	<li><a href="/treatments/paediatric/">Paediatric</a></li>
+	<li><a href="/treatments/paediatric-dentist/">Paediatric Dentist</a></li>
 </ul>
 <ul id="faq" class="dropdown-content">
 	<li><a href="/faq/orthodontic/">Orthodontic</a></li>
-	<li><a href="/faq/paediatric/">Paediatric</a></li>
+	<li><a href="/faq/paediatric-dentist/">Paediatric Dentist</a></li>
 </ul>
 <nav>
 	<div class="container">
