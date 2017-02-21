@@ -260,8 +260,7 @@ function material_design_dentistry_scripts() {
 	}
 
 	// Add Material scripts and styles
-	if( !is_admin()){
-		wp_deregister_script('jquery');
+	if( !is_admin() ){
 		wp_enqueue_script( 'material-jquery', 'http://code.jquery.com/jquery-2.1.3.min.js', array(), '1.0', false );
 	}
 	wp_enqueue_style( 'material-icons', 'http://fonts.googleapis.com/icon?family=Material+Icons' );
@@ -270,7 +269,10 @@ function material_design_dentistry_scripts() {
 	wp_enqueue_script( 'material-custom', get_template_directory_uri() . '/js/theme/navigation.js', array(), '1.0', false );
 	wp_enqueue_style( 'material-design-dentistry-style', get_stylesheet_uri() );
 	//Remove materialize shorcode plugin's bundle as the project already loads the JS assets.
-	wp_deregister_script('M-Script-bundle');
+	wp_deregister_script('M-Script-bundle ');
+	//Disable custom feed plugin's magnific popup as it causes a JS error
+	wp_deregister_script('fts-popup-js');
+	wp_deregister_script('fts-popup-css');
 }
 add_action( 'wp_enqueue_scripts', 'material_design_dentistry_scripts' );
 
