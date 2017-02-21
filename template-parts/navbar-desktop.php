@@ -5,11 +5,11 @@
 </ul>
 <ul id="treatments" class="dropdown-content">
 	<li><a href="/treatments/orthodontic/">Orthodontic</a></li>
-	<li><a href="/treatments/paediatric-dentist/">Paediatric Dentist</a></li>
+	<li><a href="/treatments/paediatric-dentistry/">Paediatric Dentistry</a></li>
 </ul>
 <ul id="faq" class="dropdown-content">
 	<li><a href="/faq/orthodontic/">Orthodontic</a></li>
-	<li><a href="/faq/paediatric-dentist/">Paediatric Dentist</a></li>
+	<li><a href="/faq/paediatric-dentistry/">Paediatric Dentistry</a></li>
 </ul>
 <nav>
 	<div class="container">
