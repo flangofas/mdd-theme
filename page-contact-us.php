@@ -24,7 +24,9 @@ get_header();
                         ?>
                         <div class="col l5 s12"><?php echo do_shortcode('[wpgmza id="1"]'); ?></div>
                         <div class="col offset-l1 l6 s12">
-                            <?php echo do_shortcode('[contact-form-7 id="3" title="Contact form 1"]'); ?>
+                            <div style="padding: 20px">
+                                <?php echo do_shortcode('[contact-form-7 id="3" title="Contact form 1"]'); ?>
+                            </div>
                         </div>
                     </div>
                 </div>
