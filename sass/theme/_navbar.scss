@@ -1,3 +1,5 @@
+@import "../components/navbar";
+
 /**
  * Navbar overwrites
  */
@@ -55,7 +57,7 @@ nav {
     font-size: $navbar-brand-font-size;
     padding: 0;
     white-space: nowrap;
-    z-index: 9999;
+    z-index: 400;
 
     &.center {
       @media only screen and (min-width: $medium-screen-up) and (max-width: $large-screen) {
@@ -73,7 +75,7 @@ nav {
           width: 60%;
         }
         @media only screen and (min-width: $large-screen-up) {
-          width: 100%;
+          width: 80%;
         }
       }
     }
