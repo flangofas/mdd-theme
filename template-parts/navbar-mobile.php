@@ -2,20 +2,44 @@
 	<li class="no-padding">
 		<ul class="collapsible collapsible-accordion">
 			<li>
-				<a class="collapsible-header">OUR DOCTORS<i class="material-icons">arrow_drop_down</i></a>
+				<a class="collapsible-header waves-effect waves-yellow accent-2">OUR DOCTORS</a>
 				<div class="collapsible-body">
 					<ul>
-						<li><a href="/orthodontist/">Orthodontist</a></li>
-						<li><a href="/paediatric/">Paediatric</a></li>
+						<li><a href="/our-doctors/orthodontist/">Orthodontist</a></li>
+						<li><a href="/our-doctors/paediatric-dentist/">Paediatric Dentist</a></li>
 					</ul>
 				</div>
 			</li>
 		</ul>
 	</li>
 	<li><a href="/our-clinic/">OUR CLINIC</a></li>
-	<li><a href="/our-treatments/">TREATMENTS</a></li>
+	<li class="no-padding">
+		<ul class="collapsible collapsible-accordion">
+			<li>
+				<a class="collapsible-header waves-effect waves-yellow accent-2">TREATMENTS</a>
+				<div class="collapsible-body">
+					<ul>
+						<li><a href="/treatments/orthodontics/">Orthodontics</a></li>
+						<li><a href="/treatments/paediatric-dentistry/">Paediatric Dentistry</a></li>
+					</ul>
+				</div>
+			</li>
+		</ul>
+	</li>
 	<li><a href="/blog/">ARTICLES</a></li>
 	<li><a href="/videos/">VIDEOS</a></li>
-	<li><a href="/faq/">FAQ</a></li>
+	<li class="no-padding">
+		<ul class="collapsible collapsible-accordion">
+			<li>
+				<a class="collapsible-header waves-effect waves-yellow accent-2">FAQ</a>
+				<div class="collapsible-body">
+					<ul>
+						<li><a href="/faq/orthodontics/">Orthodontics</a></li>
+						<li><a href="/faq/paediatric-dentistry/">Paediatric Dentistry</a></li>
+					</ul>
+				</div>
+			</li>
+		</ul>
+	</li>
 	<li><a href="/contact-us/">CONTACT US</a></li>
 </ul>

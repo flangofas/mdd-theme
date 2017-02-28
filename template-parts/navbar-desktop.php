@@ -24,7 +24,7 @@
 			<ul id="nav-mobile" class="right hide-on-med-and-down">
 				<li><a href="/blog/">ARTICLES</a></li>
 				<li><a href="/videos/">VIDEOS</a></li>
-				<li><a class="dropdown-button" href="#!" data-beloworigin="true" data-activates="faq">FAQ<i class="material-icons right">arrow_drop_down</i></a></li>
+				<li><a class="dropdown-button" href="#!" data-beloworigin="true" data-activates="faq">FAQ <i class="material-icons right">arrow_drop_down</i></a></li>
 				<li><a href="/contact-us/">CONTACT US</a></li>
 			</ul>
 		</div>
