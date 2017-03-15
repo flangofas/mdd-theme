@@ -48,7 +48,7 @@
 		<div class="footer-copyright">
 			<div class="container grey-text text-darken-4">
 			© <?php echo date('Y') ?> Copyright Text
-			<a class="grey-text text-darken-4 right" href="#!">Developed by Antonis Flangofas</a>
+			<a class="grey-text text-darken-4 right" href="http://flangofas.me">Developed by Antonis Flangofas</a>
 			</div>
 		</div>
 	</footer>
