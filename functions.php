@@ -193,7 +193,8 @@ function material_design_dentistry_setup() {
 
 	// This theme uses wp_nav_menu() in one location.
 	register_nav_menus( array(
-		'primary' => esc_html__( 'Primary', 'material-design-dentistry' ),
+		'primary-left' => esc_html__( 'Primary menu left', 'material-design-dentistry' ),
+		'primary-right' => esc_html__( 'Primary menu right', 'material-design-dentistry' ),
 		'footer-left' => esc_html__( 'Footer left', 'material-design-dentistry' ),
 		'footer-social-media' => esc_html__( 'Footer Social Media', 'material-design-dentistry' ),
 	) );

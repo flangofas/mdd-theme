@@ -14,5 +14,14 @@ jQuery(document).ready(function ($) {
     } else {
         cf7input.wrap( "<div></div>" );
     }
-	$('.input-field br').remove();
+
+    // main dropdown initialization
+    $('.dropdown-button.main-menu-item').dropdown({
+        constrain_width: true, // Does not change width of dropdown to that of the activator
+        hover: true, // Activate on hover
+        belowOrigin: true, // Displays dropdown below the button
+        alignment: 'left', // Displays dropdown with edge aligned to the left of button
+    });
+
+    $('.input-field br').remove();
 });
