@@ -1,4 +1,6 @@
 <?php
+require_once get_template_directory() . '/inc/wp_materialize_navwalker.php';
+
 /**
  * Material Design Dentistry functions and definitions.
  *
