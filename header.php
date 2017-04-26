@@ -33,6 +33,5 @@
 	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'material-design-dentistry' ); ?></a>
 
 	<header id="masthead" class="site-header" role="banner">
-		<?php get_template_part('template-parts/navbar', 'desktop'); ?>
-		<?php get_template_part('template-parts/navbar', 'mobile'); ?>
+		<?php get_template_part('template-parts/navbar'); ?>
 	</header><!-- #masthead -->

@@ -1,5 +1,6 @@
 <?php
 require_once get_template_directory() . '/inc/wp_materialize_navwalker.php';
+require_once get_template_directory() . '/inc/wp_materialize_navwalker_mobile.php';
 
 /**
  * Material Design Dentistry functions and definitions.
@@ -193,6 +194,7 @@ function material_design_dentistry_setup() {
 
 	// This theme uses wp_nav_menu() in one location.
 	register_nav_menus( array(
+		'primary-mobile' => esc_html__( 'Primary menu mobile', 'material-design-dentistry' ),
 		'primary-left' => esc_html__( 'Primary menu left', 'material-design-dentistry' ),
 		'primary-right' => esc_html__( 'Primary menu right', 'material-design-dentistry' ),
 		'footer-left' => esc_html__( 'Footer left', 'material-design-dentistry' ),
