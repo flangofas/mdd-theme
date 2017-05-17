@@ -37,3 +37,42 @@ function material_design_dentistry_pingback_header() {
 	}
 }
 add_action( 'wp_head', 'material_design_dentistry_pingback_header' );
+
+
+function material_design_dentistry_get_language_flag($language = null) {
+	global $q_config;
+	if (!$language) {
+		$language = $q_config['language'];
+	}
+	$location = qtranxf_flag_location();
+	$img_url = $location . $q_config['flag'][$language];
+
+	return '<img src="' . $img_url . '">';
+}
+
+function material_design_dentistry_active_languages($tagId) {
+	global $q_config;
+	$items = $list = '';
+	$list = '<ul id="' . $tagId . '" class="dropdown-content">';
+	foreach (qtranxf_getSortedLanguages() as $language) {
+		if ($language == $q_config['language']) {
+			continue;
+		}
+		$img = material_design_dentistry_get_language_flag($language);
+		$items .= '<li><a href="' . qtranxf_convertURL('', $language, false, true) . '">' . $img . '</a></li>';
+	}
+	$list .= $items;
+	$list .= '</ul>';
+
+	return $list;
+}
+
+function material_design_dentistry_is_multilingual()
+{
+	$langs = [];
+	if (function_exists('qtranxf_getSortedLanguages')) {
+		$langs = qtranxf_getSortedLanguages();
+	}
+
+	return empty($langs) ? false : true;
+}

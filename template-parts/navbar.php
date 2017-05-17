@@ -1,3 +1,8 @@
+<?php
+if (material_design_dentistry_is_multilingual()) {
+	echo material_design_dentistry_active_languages('langs');
+}
+?>
 <div class="navbar-fixed">
 	<nav>
 		<div class="container">
@@ -12,6 +17,12 @@
 					'walker' => new wp_materialize_navwalker()
 				));
 				?>
+				<?php if (material_design_dentistry_is_multilingual()) : ?>
+					<ul class="right">
+				      <!-- Dropdown Trigger -->
+				      <li><a class="dropdown-button main-menu-item" href="#!" data-activates="langs"><?php echo material_design_dentistry_get_language_flag() ?><i class="material-icons right">arrow_drop_down</i></a></li>
+				    </ul>
+				<?php endif; ?>
 				<?php
 				wp_nav_menu( array(
 					'menu' => 'primary menu right',
@@ -27,7 +38,9 @@
 						'walker' => new wp_materialize_navwalker_mobile(),
 				];
 				wp_nav_menu( $menu ); // mobile side menu
+
 				?>
+
 			</div>
 		</div>
 	</nav>
