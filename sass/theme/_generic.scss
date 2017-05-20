@@ -120,3 +120,28 @@ ul.menu-footer-left {
 .dropdown-content{
   overflow: visible !important;
 }
+
+.list-inline {
+  padding-left: 0;
+  margin-left: -5px;
+  list-style: none;
+  > li {
+    display: inline-block;
+    padding-right: 5px;
+    padding-left: 5px;
+  }
+}
+
+.navbar-fixed.languages {
+    height: 30px;
+    line-height: 30px;
+    nav {
+      height: 30px;
+      line-height: 30px;
+      ul {
+        a {
+            padding: 0 5px;
+        }
+      }
+    }
+}

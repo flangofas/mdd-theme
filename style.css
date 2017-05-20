@@ -6882,6 +6882,27 @@ a.read-more {
 ul.menu-footer-left li a {
   color: #212121; }
 
+.dropdown-content {
+  overflow: visible !important; }
+
+.list-inline {
+  padding-left: 0;
+  margin-left: -5px;
+  list-style: none; }
+  .list-inline > li {
+    display: inline-block;
+    padding-right: 5px;
+    padding-left: 5px; }
+
+.navbar-fixed.languages {
+  height: 30px;
+  line-height: 30px; }
+  .navbar-fixed.languages nav {
+    height: 30px;
+    line-height: 30px; }
+    .navbar-fixed.languages nav ul a {
+      padding: 0 5px; }
+
 /**
  * Theme specific
  */
