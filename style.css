@@ -6903,6 +6903,9 @@ ul.menu-footer-left li a {
     .navbar-fixed.languages nav ul a {
       padding: 0 5px; }
 
+#nav-menu-item-392 ul {
+  min-width: 120px; }
+
 /**
  * Theme specific
  */
