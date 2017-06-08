@@ -74,7 +74,7 @@ get_header(); ?>
 					if ($section->post_thumbnail_url) :
 				?>
 						<div class="col <?php echo ($full_col) ? '' : 'l6'; ?> s12">
-							<div class="card hoverable large">
+							<div class="card hoverable medium">
 								<div class="card-image">
 									<img src="<?php echo $section->post_thumbnail_url ?>">
 									<h2 class="card-title heading"><?php echo $section->post_title ?></h2>
