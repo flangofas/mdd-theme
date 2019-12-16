@@ -14,6 +14,21 @@
 <head>
 <meta charset="<?php bloginfo( 'charset' ); ?>">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+
+<?php
+$lang = qtranxf_getLanguage();
+
+    if ($lang === 'el') :  ?>
+        <meta name="Description" content="Κλινική Δρ Λεωνίδου - Ορθοδοντική και Παιδιατρική Οδοντιατρική">
+<?php
+    elseif ($lang === 'ru') : ?>
+        <meta name="Description" content="Клиника доктора Леониду - Ортодонтия и детская стоматология">
+<?php
+    else : ?>
+        <meta name="Description" content="Drleonidou clinic - Orthodontic and Paediatric Dentistry">
+<?php
+    endif;
+?>
 <link rel="profile" href="http://gmpg.org/xfn/11">
 <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400,700" rel="stylesheet">
 
