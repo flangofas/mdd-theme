@@ -19,7 +19,7 @@
 			$caption = $item->post_excerpt ?: false;
 			?>
 			<div class="col s12 m3">
-				<img class="responsive-img materialboxed" src="<?php echo $item->guid ?>" <?php echo ($caption) ? 'data-caption="$caption"' : '' ?>" />
+				<img class="responsive-img materialboxed" src="<?php echo $item->guid ?>" <?php echo ($caption) ? 'data-caption="$caption"' : '' ?>" alt="<? echo $caption ?>" />
 			</div>
 		<?php endforeach; ?>
 	</div>

@@ -14,7 +14,7 @@
 			<div class="card">
 				<?php if (has_post_thumbnail()) : ?>
 					<div class="card-image">
-						<img src="<?php the_post_thumbnail_url() ?>">
+						<img src="<?php the_post_thumbnail_url() ?>" alt="<?php echo get_the_post_thumbnail_caption() ?>">
 						<span class="card-title"><?php the_title() ?></span>
 					</div>
 				<?php endif; ?>

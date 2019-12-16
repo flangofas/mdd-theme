@@ -9,8 +9,9 @@ $options = [
 	'form' => 'carousel',
 ];
 $items = material_design_get_attachments( $options );
+
 foreach ($items as $item) : ?>
-		<a class="carousel-item" href="#"><img src="<?php echo $item->guid ?>"></a>
+		<a class="carousel-item" href="#"><img src="<?php echo $item->guid ?>" alt="<?php echo $item->post_title ?>"></a>
 <?php
 endforeach;
 ?>

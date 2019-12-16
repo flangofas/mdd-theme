@@ -19,7 +19,7 @@ get_header(); ?>
                             <?php
                             while ( have_posts() ) : the_post();
                                 if (has_post_thumbnail()) : ?>
-                                    <img class="responsive-img" src="<?php echo get_the_post_thumbnail_url(); ?>">
+                                    <img class="responsive-img" src="<?php echo get_the_post_thumbnail_url(); ?>" alt="<?php echo get_the_post_thumbnail_caption() ?>">
                                 <?php
                                 endif;
                                 the_content();

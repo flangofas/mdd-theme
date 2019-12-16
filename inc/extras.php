@@ -47,7 +47,7 @@ function material_design_dentistry_get_language_flag($language = null) {
 	$location = qtranxf_flag_location();
 	$img_url = $location . $q_config['flag'][$language];
 
-	return '<img src="' . $img_url . '">';
+	return '<img alt="' . $lang . ' icon" src="' . $img_url . '">';
 }
 
 function material_design_dentistry_active_languages() {
