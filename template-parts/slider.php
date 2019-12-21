@@ -20,7 +20,7 @@ $query = new WP_Query( $args );
 		<li>
 			<?php the_post_thumbnail(); ?>
 			<div class="caption <?php echo $animation ?>-align">
-				<h3><?php the_title() ?></h3>
+				<h1><?php the_title() ?></h1>
 				<h5 class="light grey-text text-lighten-3"><?php the_content(); ?></h5>
 			</div>
 		</li>
