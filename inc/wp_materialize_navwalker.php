@@ -80,6 +80,9 @@ class wp_materialize_navwalker extends Walker {
     $attributes .= ! empty( $item->url )        ? ' href="'   . esc_attr( $item->url        ) .'"' : '';
     $attributes .= ! empty( $children )         ? ' data-activates="dropdown-'. $item->ID .'"' : '';
     $attributes .= ! empty( $children )         ? ' class="dropdown-button '. $depth_class_names .'"' : '';
+    //Disables anchor tag on click parent item
+    $attributes .= ! empty( $children )         ? ' onclick="return false;"' : '';
+
 
     $item_output .= '<a'. $attributes .'>';
     $item_output .= $args->link_before . apply_filters( 'the_title', $item->title, $item->ID ) . $args->link_after;
