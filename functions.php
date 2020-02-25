@@ -21,7 +21,7 @@ function material_design_seo_meta_description() {
 
     $descriptions = [
         'en' => [
-            'home' => 'A modern clinic in Limassol, Cyprus offering orthodontic and paediatric dentistry treatments, Orthodontist Dr Leonidou Andreas Radu and Paediatric dentist Dr Leonidou Alexandros',
+            'homepage' => 'A modern clinic in Limassol, Cyprus offering orthodontic and paediatric dentistry treatments, Orthodontist Dr Leonidou Andreas Radu and Paediatric dentist Dr Leonidou Alexandros',
             'our-doctors/orthodontist' => 'Orthodontist Dr Leonidou Andreas Radu Specialist in Orthodontics and Dentofacial Orthopedics from Limassol Cyprus studies and resume. Dr Leonidou Clinic',
             'our-doctors/paediatric-dentist' => 'Paediatric Dentist Dr Leonidou Alexandros Specialist in Paediatric Dentistry from Limassol Cyprus studies and resume. Dr Leonidou Clinic',
             'our-clinic' => 'Description of Dr Leonidou Clinic, area situated doctors in the clinic Dr Leonidou Andreas Radu Dr Leonidou Alexandros offering high end orthodontic and paediatric dentistry treatments in Limassol Cyprus, Images of the clinic and the friendly environment offered.',
@@ -29,10 +29,10 @@ function material_design_seo_meta_description() {
             'treatments/paediatric-dentistry' => 'Paediatric Dentistry treatments offered in our clinic, prevention treatments, injury treatments, fluoride therapy, children crowns, sealants and a multitude of other treatments offered in our clinic in Limassol Cyprus by Dr Leonidou Alexandros',
             'faq/orthodontics' => 'Articles by our Doctors explaining a wide range of questions and answers about their Specialities, and about the treatments offered in Dr Leonidou Clinic in Limassol Cyprus',
             'faq/paediatric-dentist' => 'Articles by our Doctors explaining a wide range of questions and answers about their Specialities, and about the treatments offered in Dr Leonidou Clinic in Limassol Cyprus',
-            'contact-us' => 'Find our dental clinic in the town center of Limassol on Agias Zonis road',
+            'contact-us' => 'How you can reach Dr Leonidou Clinic, Address , telephone numbers, fax number, facebook page, instagram page Ayias Zonis 29 1st Floor Limassol Cyprus',
         ],
         'el' => [
-            'home' => 'A modern clinic in Limassol, Cyprus offering orthodontic and paediatric dentistry treatments, Orthodontist Dr Leonidou Andreas Radu and Paediatric dentist Dr Leonidou Alexandros',
+            'homepage' => 'A modern clinic in Limassol, Cyprus offering orthodontic and paediatric dentistry treatments, Orthodontist Dr Leonidou Andreas Radu and Paediatric dentist Dr Leonidou Alexandros',
             'our-doctors/orthodontist' => 'Orthodontist Dr Leonidou Andreas Radu Specialist in Orthodontics and Dentofacial Orthopedics from Limassol Cyprus studies and resume. Dr Leonidou Clinic',
             'our-doctors/paediatric-dentist' => 'Paediatric Dentist Dr Leonidou Alexandros Specialist in Paediatric Dentistry from Limassol Cyprus studies and resume. Dr Leonidou Clinic',
             'our-clinic' => 'Description of Dr Leonidou Clinic, area situated doctors in the clinic Dr Leonidou Andreas Radu Dr Leonidou Alexandros offering high end orthodontic and paediatric dentistry treatments in Limassol Cyprus, Images of the clinic and the friendly environment offered.',
@@ -40,10 +40,10 @@ function material_design_seo_meta_description() {
             'treatments/paediatric-dentistry' => 'Paediatric Dentistry treatments offered in our clinic, prevention treatments, injury treatments, fluoride therapy, children crowns, sealants and a multitude of other treatments offered in our clinic in Limassol Cyprus by Dr Leonidou Alexandros',
             'faq/orthodontics' => 'Articles by our Doctors explaining a wide range of questions and answers about their Specialities, and about the treatments offered in Dr Leonidou Clinic in Limassol Cyprus',
             'faq/paediatric-dentist' => 'Articles by our Doctors explaining a wide range of questions and answers about their Specialities, and about the treatments offered in Dr Leonidou Clinic in Limassol Cyprus',
-            'contact-us' => 'Find our dental clinic in the town center of Limassol on Agias Zonis road',
+            'contact-us' => 'How you can reach Dr Leonidou Clinic, Address , telephone numbers, fax number, facebook page, instagram page Ayias Zonis 29 1st Floor Limassol Cyprus',
         ],
         'ru' => [
-            'home' => 'A modern clinic in Limassol, Cyprus offering orthodontic and paediatric dentistry treatments, Orthodontist Dr Leonidou Andreas Radu and Paediatric dentist Dr Leonidou Alexandros',
+            'homepage' => 'A modern clinic in Limassol, Cyprus offering orthodontic and paediatric dentistry treatments, Orthodontist Dr Leonidou Andreas Radu and Paediatric dentist Dr Leonidou Alexandros',
             'our-doctors/orthodontist' => 'Orthodontist Dr Leonidou Andreas Radu Specialist in Orthodontics and Dentofacial Orthopedics from Limassol Cyprus studies and resume. Dr Leonidou Clinic',
             'our-doctors/paediatric-dentist' => 'Paediatric Dentist Dr Leonidou Alexandros Specialist in Paediatric Dentistry from Limassol Cyprus studies and resume. Dr Leonidou Clinic',
             'our-clinic' => 'Description of Dr Leonidou Clinic, area situated doctors in the clinic Dr Leonidou Andreas Radu Dr Leonidou Alexandros offering high end orthodontic and paediatric dentistry treatments in Limassol Cyprus, Images of the clinic and the friendly environment offered.',
@@ -51,7 +51,7 @@ function material_design_seo_meta_description() {
             'treatments/paediatric-dentistry' => 'Paediatric Dentistry treatments offered in our clinic, prevention treatments, injury treatments, fluoride therapy, children crowns, sealants and a multitude of other treatments offered in our clinic in Limassol Cyprus by Dr Leonidou Alexandros',
             'faq/orthodontics' => 'Articles by our Doctors explaining a wide range of questions and answers about their Specialities, and about the treatments offered in Dr Leonidou Clinic in Limassol Cyprus',
             'faq/paediatric-dentist' => 'Articles by our Doctors explaining a wide range of questions and answers about their Specialities, and about the treatments offered in Dr Leonidou Clinic in Limassol Cyprus',
-            'contact-us' => 'Find our dental clinic in the town center of Limassol on Agias Zonis road',
+            'contact-us' => 'How you can reach Dr Leonidou Clinic, Address , telephone numbers, fax number, facebook page, instagram page Ayias Zonis 29 1st Floor Limassol Cyprus',
         ]
     ];
 
