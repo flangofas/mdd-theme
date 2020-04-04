@@ -29,7 +29,7 @@ function material_design_seo_meta_description() {
             'treatments/orthodontics' => 'Orthodontic treatments offered in our clinic, metal braces, clear braces, sapphire braces, gold braces pre-orthodontic treatments, habit-breaking treatments, Invisalign type bite correctors in Limassol Cyprus at Dr Leonidou Clinic by Dr Leonidou Andreas',
             'treatments/paediatric-dentistry' => 'Paediatric Dentistry treatments offered in our clinic, prevention treatments, injury treatments, fluoride therapy, children crowns, sealants and a multitude of other treatments offered in our clinic in Limassol Cyprus by Dr Leonidou Alexandros',
             'faq/orthodontics' => 'Articles by our Doctors explaining a wide range of questions and answers about their Specialities, and about the treatments offered in Dr Leonidou Clinic in Limassol Cyprus',
-            'faq/paediatric-dentist' => 'Articles by our Doctors explaining a wide range of questions and answers about their Specialities, and about the treatments offered in Dr Leonidou Clinic in Limassol Cyprus',
+            'faq/paediatric-dentistry' => 'Articles by our Doctors explaining a wide range of questions and answers about their Specialities, and about the treatments offered in Dr Leonidou Clinic in Limassol Cyprus',
             'contact-us' => 'How you can reach Dr Leonidou Clinic, Address , telephone numbers, fax number, facebook page, instagram page Ayias Zonis 29 1st Floor Limassol Cyprus',
         ],
         'el' => [
@@ -41,11 +41,10 @@ function material_design_seo_meta_description() {
             'treatments/orthodontics' => 'Ορθοδοντικές θεραπείες που προσφέρονται στην κλινική μας, μεταλλικά σιδεράκια, διαφανή σιδεράκια, σιδεράκια από ζαφείρι, χρυσά σιδεράκια, προ-ορθοδοντικές θεραπείες, θεραπείες  αποκοπής συνήθειας, νάρθηκες τύπου Invisalign στη Λεμεσό στην Κλινική Δρ Λεωνίδου από τον ειδικό Ορθοδοντικό Δρ Λεωνίδου Ανδρέα',
             'treatments/paediatric-dentistry' => 'Παιδοδοντιατρικές θεραπείες που προσφέρονται στην κλινική μας, θεραπείες πρόληψης, θεραπείες τραυματισμών, θεραπεία φθορίου, παιδικές στεφάνες (θήκες) , προληπτικά σφραγίσματα και πλήθος άλλων θεραπειών που προσφέρονται στην κλινική μας στη Λεμεσό από τον παιδοδοντίατρο Δρ Λεωνίδου Αλέξανδρο',
             'faq/orthodontics' => 'Συχνές ερωτήσεις και απαντήσεις ως αναφορά την ορθοδοντική και τις ορθοδοντικές θεραπείες που προσφέρονται στην κλινική Δρ Λεωνίδου από τον Ορθοδοντικό Δρ Λεωνίδου Ανδρεα',
-            'faq/paediatric-dentist' => 'Συχνές ερωτήσεις και απαντήσεις ως αναφορά την παιδοδοντιατρική και τις Παιδοδοντιατρικές θεραπείες που προσφέρονται στην κλινική Δρ Λεωνίδου από τον παιδοδοντίατρο Δρ Λεωνίδου Αλέξανδρο',
+            'faq/paediatric-dentistry' => 'Συχνές ερωτήσεις και απαντήσεις ως αναφορά την παιδοδοντιατρική και τις Παιδοδοντιατρικές θεραπείες που προσφέρονται στην κλινική Δρ Λεωνίδου από τον παιδοδοντίατρο Δρ Λεωνίδου Αλέξανδρο',
             'contact-us' => 'Που βρίσκεται η Κλινική Δρ Λεωνίδου και πως μπορείτε να επικοινωνήσετε μαζί μας, Διεύθυνση, αριθμοί τηλεφώνου, αριθμός φαξ, σελίδα Facebook, σελίδα Instagram Αγιας Ζώνης 29 1ος όροφος Λεμεσός Κύπρος',
         ],
         'ru' => [
-            //Reminder: add articles to all languages
             'articles' => 'Статьи наших врачей, объясняющие широкий спектр вопросов и ответов об их специальностях, а также о процедурах, предлагаемых в клинике доктора Леониду в Лимассоле, Кипр',
             'homepage' => 'Современная клиника в Лимассоле, Кипр, предлагает ортодонтическое и педиатрическое лечение, ортодонт доктор Леониду Андреас Раду и детский стоматолог доктор Леониду Александрос',
             'our-doctors/orthodontist' => 'Ортодонт Доктор Леониду Андреас Раду Специалист по ортодонтии и челюстно-лицевой ортопедии из Лимассола. Исследования на Кипре. Клиника доктора Леониду',
@@ -54,7 +53,7 @@ function material_design_seo_meta_description() {
             'treatments/orthodontics' => 'Лечение зубов, предлагаемое в нашей клинике: установка металлических брекетов, прозрачных брекетов, сапфировых брекетов, преортодонтических брекетов с золотыми брекетами, изменение неправильных привычек, корректоры прикуса типа Invisalign в Лимассоле, Кипр в клинике доктора Леониду доктором Леониду Андреасом',
             'treatments/paediatric-dentistry' => 'Детское стоматологическое лечение, предлагаемое в нашей клинике: профилактическое лечение, лечение травм, фторидная терапия, детские коронки, герметики и множество других процедур, предлагаемых в нашей клинике в Лимассоле, Кипр доктором Леониду Александросом.',
             'faq/orthodontics' => 'Ответы на часто задаваемые вопросы, касающиеся ортодонтии и зубного лечения можно получить в клинике доктора Леониду Доктором Андреасом Леониду',
-            'faq/paediatric-dentist' => 'Часто задаваемые вопросы и ответы о детской стоматологии и лечении, предлагаемом в клинике доктора Леониду детским стоматологом доктором Леониду Александросом',
+            'faq/paediatric-dentistry' => 'Часто задаваемые вопросы и ответы о детской стоматологии и лечении, предлагаемом в клинике доктора Леониду детским стоматологом доктором Леониду Александросом',
             'contact-us' => 'Как добраться до клиники доктора Леониду, адрес, номера телефонов, номер факса, страница Facebook, страница Instagram Instagram Ayias Zonis 29 1-й этаж Лимассол Кипр',
         ]
     ];
