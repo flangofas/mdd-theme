@@ -21,6 +21,7 @@ function material_design_seo_meta_description() {
 
     $descriptions = [
         'en' => [
+            'articles' => 'Articles by our Doctors explaining a wide range of questions and answers about their Specialities, and about the treatments offered in Dr Leonidou Clinic in Limassol Cyprus',
             'homepage' => 'A modern clinic in Limassol, Cyprus offering orthodontic and paediatric dentistry treatments, Orthodontist Dr Leonidou Andreas Radu and Paediatric dentist Dr Leonidou Alexandros',
             'our-doctors/orthodontist' => 'Orthodontist Dr Leonidou Andreas Radu Specialist in Orthodontics and Dentofacial Orthopedics from Limassol Cyprus studies and resume. Dr Leonidou Clinic',
             'our-doctors/paediatric-dentist' => 'Paediatric Dentist Dr Leonidou Alexandros Specialist in Paediatric Dentistry from Limassol Cyprus studies and resume. Dr Leonidou Clinic',
@@ -32,6 +33,7 @@ function material_design_seo_meta_description() {
             'contact-us' => 'How you can reach Dr Leonidou Clinic, Address , telephone numbers, fax number, facebook page, instagram page Ayias Zonis 29 1st Floor Limassol Cyprus',
         ],
         'el' => [
+            'articles' => 'Τα άρθρα των Ιατρών μας εξηγούν και αναλύουν ένα ευρύ φάσμα θεμάτων, ερωτήσεων και απαντήσεων σχετικά με τις ειδικότητες τους και τις θεραπείες που προσφέρονται στην κλινική του Δρ Λεωνίδου στη Λεμεσό',
             'homepage' => 'Μια σύγχρονη κλινική στη Λεμεσό, στην Κύπρο που προσφέρει ορθοδοντικές για όλους και οδοντιατρικές θεραπείες για παιδιά και έφηβους. Ο Ορθοδοντικός Δρ Λεωνίδου Ανδρέας και ο Παιδοδοντίατρος Δρ Λεωνίδου Αλέξανδρος είναι δυο πλήρως καταρτισμένοι ιατροί για να παρέχουν υψηλής ποιότητας θεραπείες.',
             'our-doctors/orthodontist' => 'Το σύντομο βιογραφικό του Ειδικού Ορθοδοντικού Δρ Λεωνίδου Ανδρεα. Καταγωγής από τη Λεμεσό, Ορθοδοντικού της Κλινικής Δρ Λεωνίδου',
             'our-doctors/paediatric-dentist' => 'Το σύντομο βιογραφικό του Παιδοδοντίατρου Δρ Λεωνίδου Αλέξανδρου. Καταγωγής από τη Λεμεσό, Παιδοδοντίατρου της Κλινικής Δρ Λεωνίδου',
@@ -44,15 +46,16 @@ function material_design_seo_meta_description() {
         ],
         'ru' => [
             //Reminder: add articles to all languages
-            'homepage' => 'A modern clinic in Limassol, Cyprus offering orthodontic and paediatric dentistry treatments, Orthodontist Dr Leonidou Andreas Radu and Paediatric dentist Dr Leonidou Alexandros',
-            'our-doctors/orthodontist' => 'Orthodontist Dr Leonidou Andreas Radu Specialist in Orthodontics and Dentofacial Orthopedics from Limassol Cyprus studies and resume. Dr Leonidou Clinic',
-            'our-doctors/paediatric-dentist' => 'Paediatric Dentist Dr Leonidou Alexandros Specialist in Paediatric Dentistry from Limassol Cyprus studies and resume. Dr Leonidou Clinic',
-            'our-clinic' => 'Description of Dr Leonidou Clinic, area situated doctors in the clinic Dr Leonidou Andreas Radu Dr Leonidou Alexandros offering high end orthodontic and paediatric dentistry treatments in Limassol Cyprus, Images of the clinic and the friendly environment offered.',
-            'treatments/orthodontics' => 'Orthodontic treatments offered in our clinic, metal braces, clear braces, sapphire braces, gold braces pre-orthodontic treatments, habit-breaking treatments, Invisalign type bite correctors in Limassol Cyprus at Dr Leonidou Clinic by Dr Leonidou Andreas',
-            'treatments/paediatric-dentistry' => 'Paediatric Dentistry treatments offered in our clinic, prevention treatments, injury treatments, fluoride therapy, children crowns, sealants and a multitude of other treatments offered in our clinic in Limassol Cyprus by Dr Leonidou Alexandros',
-            'faq/orthodontics' => 'Articles by our Doctors explaining a wide range of questions and answers about their Specialities, and about the treatments offered in Dr Leonidou Clinic in Limassol Cyprus',
-            'faq/paediatric-dentist' => 'Articles by our Doctors explaining a wide range of questions and answers about their Specialities, and about the treatments offered in Dr Leonidou Clinic in Limassol Cyprus',
-            'contact-us' => 'How you can reach Dr Leonidou Clinic, Address , telephone numbers, fax number, facebook page, instagram page Ayias Zonis 29 1st Floor Limassol Cyprus',
+            'articles' => 'Статьи наших врачей, объясняющие широкий спектр вопросов и ответов об их специальностях, а также о процедурах, предлагаемых в клинике доктора Леониду в Лимассоле, Кипр',
+            'homepage' => 'Современная клиника в Лимассоле, Кипр, предлагает ортодонтическое и педиатрическое лечение, ортодонт доктор Леониду Андреас Раду и детский стоматолог доктор Леониду Александрос',
+            'our-doctors/orthodontist' => 'Ортодонт Доктор Леониду Андреас Раду Специалист по ортодонтии и челюстно-лицевой ортопедии из Лимассола. Исследования на Кипре. Клиника доктора Леониду',
+            'our-doctors/paediatric-dentist' => 'Детский стоматолог Доктор Леониду Александрос Специалист по детской стоматологии из Лимассола. Исследования на Кипре. Клиника доктора Леониду',
+            'our-clinic' => 'Описание клиники доктора Леониду, находится по соседству с врачами в клинике доктора Леониду Андреас Раду Доктора Леониду Александрос, который предлагает высококачественную ортодонтическую и детскую стоматологическую терапию в Лимассоле, Кипр, клинике с дружественной атмосферой.',
+            'treatments/orthodontics' => 'Лечение зубов, предлагаемое в нашей клинике: установка металлических брекетов, прозрачных брекетов, сапфировых брекетов, преортодонтических брекетов с золотыми брекетами, изменение неправильных привычек, корректоры прикуса типа Invisalign в Лимассоле, Кипр в клинике доктора Леониду доктором Леониду Андреасом',
+            'treatments/paediatric-dentistry' => 'Детское стоматологическое лечение, предлагаемое в нашей клинике: профилактическое лечение, лечение травм, фторидная терапия, детские коронки, герметики и множество других процедур, предлагаемых в нашей клинике в Лимассоле, Кипр доктором Леониду Александросом.',
+            'faq/orthodontics' => 'Ответы на часто задаваемые вопросы, касающиеся ортодонтии и зубного лечения можно получить в клинике доктора Леониду Доктором Андреасом Леониду',
+            'faq/paediatric-dentist' => 'Часто задаваемые вопросы и ответы о детской стоматологии и лечении, предлагаемом в клинике доктора Леониду детским стоматологом доктором Леониду Александросом',
+            'contact-us' => 'Как добраться до клиники доктора Леониду, адрес, номера телефонов, номер факса, страница Facebook, страница Instagram Instagram Ayias Zonis 29 1-й этаж Лимассол Кипр',
         ]
     ];
 
